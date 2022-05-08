@@ -47,7 +47,7 @@ public class Dice : MonoBehaviour
             diceFinalResult = Random.Range(0,6);
 
             // Rendering a Sprite which correspond to the generated random number.
-            diceRenderer.sprite = diceSprites[diceTemporaryResult];
+            diceRenderer.sprite = diceSprites[diceFinalResult];
 
             yield return new WaitForSeconds(0.05f);
         }
